@@ -12,12 +12,12 @@ public class Main
 
     public static void main(String[] args)
     {
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-        Scanner scanner = new Scanner(System.in);
-
         try
         {
+            Connection connection = null;
+            PreparedStatement preparedStatement = null;
+            Scanner scanner = new Scanner(System.in);
+
             Driver driver = new FabricMySQLDriver();
             DriverManager.registerDriver(driver);
             connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
@@ -25,7 +25,7 @@ public class Main
             boolean exit = false;
             while(!exit)
             {
-                // interface
+                // user interface
                 System.out.println("Please, choose one:");
                 System.out.println("1: ADD book");
                 System.out.println("2: SHOW books");
@@ -38,17 +38,18 @@ public class Main
                 {
                     case 1:
                     // ADD the book
+
                         // get data from user
                         System.out.println("Enter book name:");
                         String bookName = scanner.next();
                         System.out.println("Enter book author:");
                         String bookAuthor = scanner.next();
 
-                        // preparing and executing statement with data
+                        // preparing and executing statement with users data
                         preparedStatement = connection.prepareStatement("INSERT INTO books VALUES(?,?,?)");
-                        preparedStatement.setInt(1, 0);
                         preparedStatement.setString(2, bookName);
                         preparedStatement.setString(3, bookAuthor);
+                        preparedStatement.setInt(1, 0); // we don't ask user about ID
                         preparedStatement.execute();
                         System.out.println("Book added");
                         break;
@@ -59,11 +60,12 @@ public class Main
                         // get data from database
                         preparedStatement = connection.prepareStatement("SELECT name, author FROM books ORDER BY name");
                         ResultSet resultSet = preparedStatement.executeQuery();
+
+                        // show data
                         while (resultSet.next())
                         {
                             String name = resultSet.getString("name");
                             String author = resultSet.getString("author");
-
                             System.out.println(author+"\t"+name);
                         }
                         System.out.println(); // space
@@ -77,7 +79,7 @@ public class Main
                         System.out.println("Enter book name:");
                         bookName = scanner.next();
 
-                        // executing statement using users data
+                        // executing statement with users data
                         preparedStatement = connection.prepareStatement("SELECT * FROM books WHERE name = ?");
                         preparedStatement.setString(1, bookName);
                         resultSet = preparedStatement.executeQuery();
@@ -103,7 +105,7 @@ public class Main
                             System.out.println("Enter new name:");
                             String newName = scanner.next();
 
-                            // prepare and execute statement using users data
+                            // prepare and execute statement with users data
                             preparedStatement = connection.prepareStatement("UPDATE books SET name = ? WHERE id = ?");
                             preparedStatement.setString(1, newName);
                             preparedStatement.setInt(2, bookID);
@@ -148,6 +150,7 @@ public class Main
                     case 4:
                     // DELETE book
 
+                        // ask about name
                         System.out.println("Enter book name: (deleting)");
                         bookName = scanner.next();
 
