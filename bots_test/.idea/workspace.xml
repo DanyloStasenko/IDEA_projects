@@ -26,10 +26,9 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/database/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3138587" vertical-offset="3101" max-vertical-offset="3978">
+            <state vertical-scroll-proportion="0.3870334" vertical-offset="2904" max-vertical-offset="3944">
               <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
                 <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
                 <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
@@ -271,6 +270,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -349,8 +350,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -613,6 +612,12 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -631,12 +636,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <list size="1">
@@ -671,15 +670,16 @@
       <workItem from="1473007493140" duration="95000" />
       <workItem from="1473007624285" duration="637000" />
       <workItem from="1473008453728" duration="1500000" />
+      <workItem from="1473229680709" duration="78000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37801000" />
+    <option name="totallyTimeSpent" value="37879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -694,18 +694,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.122068234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.122068234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26889953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -735,10 +735,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/database/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3298" max-vertical-offset="3944">
+          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+          <folding>
+            <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
+            <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
+            <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
+            <marker date="1473009837194" expanded="true" signature="4438:4476" placeholder="UPDATE books..." />
+            <marker date="1473009837194" expanded="true" signature="4979:5013" placeholder="SELECT * FRO..books..." />
+            <marker date="1473009837194" expanded="true" signature="6025:6063" placeholder="UPDATE books..." />
+            <marker date="1473009837194" expanded="true" signature="6756:6790" placeholder="SELECT * FRO..books..." />
+            <marker date="1473009837194" expanded="true" signature="7485:7517" placeholder="DELETE FROM ..." />
+            <marker date="1473009837194" expanded="true" signature="7948:7982" placeholder="SELECT * FRO..books..." />
+            <marker date="1473009837194" expanded="true" signature="8818:8848" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2326" max-vertical-offset="3927">
           <caret line="168" column="34" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
             <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
             <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
@@ -766,7 +784,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3050" max-vertical-offset="3927">
           <caret line="217" column="9" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
             <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
             <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
@@ -794,7 +811,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2909" max-vertical-offset="3927">
           <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
             <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
             <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
@@ -822,7 +838,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3033" max-vertical-offset="3910">
           <caret line="224" column="7" selection-start-line="224" selection-start-column="7" selection-end-line="224" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
             <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
             <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
@@ -850,7 +865,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2890" max-vertical-offset="4046">
           <caret line="170" column="43" selection-start-line="170" selection-start-column="43" selection-end-line="170" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
             <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
             <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
@@ -878,7 +892,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1156">
           <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
             <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
             <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
@@ -906,7 +919,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="714">
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
             <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
             <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
@@ -939,10 +951,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/database/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3138587" vertical-offset="3101" max-vertical-offset="3978">
+        <state vertical-scroll-proportion="0.3870334" vertical-offset="2904" max-vertical-offset="3944">
           <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1473009837194" expanded="true" signature="1814:1845" placeholder="INSERT INTO ..." />
             <marker date="1473009837194" expanded="true" signature="2398:2442" placeholder="SELECT name,..books..." />
             <marker date="1473009837194" expanded="true" signature="3325:3359" placeholder="SELECT * FRO..books..." />
