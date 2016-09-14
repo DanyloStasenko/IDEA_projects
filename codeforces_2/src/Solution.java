@@ -15,6 +15,7 @@ public class Solution
     3) Find DIAG_SUM, if DIAG1 != DIAG2, and IF value[MIN+RAW][MIN_COLUMN] != DIAG_differrnce - false
      */
 
+    //14
 
     static int max(int value1, int value2)
     {
