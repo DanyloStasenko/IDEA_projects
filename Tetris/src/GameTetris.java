@@ -46,6 +46,7 @@ public class GameTetris
     Figure figure = new Figure();
     boolean gameOver = false;
 
+
     // text: 'GAME OVER'
     final int[][] GAME_OVER_MSG =
     {
