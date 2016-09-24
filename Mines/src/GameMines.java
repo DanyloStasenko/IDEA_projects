@@ -82,7 +82,6 @@ public class GameMines extends JFrame
 
 
 
-
     void initField()
     {
 
