@@ -1,61 +1,57 @@
 package sample;
-
+import javafx.fxml.FXML;
 import com.mpatric.mp3agic.ID3v1;
 import com.mpatric.mp3agic.Mp3File;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import java.io.File;
 import java.util.List;
 
-public class Controller
-{
 /*
-    @FXML
-    private Button btn1;
+Program is not working with cyrillic  files --> FIX THIS BUG
+If (oldFileName = newFileName) - don't increment filesRenamed --> FIX THIS BUG
 */
 
-    @FXML
-    private Button btn2;
-
-    @FXML
-    private Button btn3;
+public class Controller
+{
 
     @FXML
     private ListView listView;
+
+    @FXML
+    private Text txtSelected; // selected OK
+
+    @FXML
+    private Text txtProcessInfo; // process info
+
+    @FXML
+    private Text txtProcessed; // processed
+
+    @FXML
+    private Text txtSuccessfull; // success
+
+    @FXML
+    private Text txtCantRename; // unsuccess
+
+    @FXML
+    private Text txtErrors; // current process
+
+
     private List<File> pathes;
+    private List<File> selectedFiles;
+    private int filesProcessedCount = 0;
+    private int filesSuccessCount = 0;
+    private int filesUnsuccessCount = 0;
 
-    /*
-
-    public void Button1Action (ActionEvent event)
-    {
-        FileChooser fc = new FileChooser();
-       fc.getExtensionFilters().addAll(
-       new FileChooser.ExtensionFilter("MP3 files", "*.mp3"));
-        File selectedFile = fc.showOpenDialog(null);
-
-        if (selectedFile != null)
-        {
-            listView.getItems().add(selectedFile.getName());
-
-        }
-        else
-        {
-            System.out.println("File not valid");
-        }
-
-    }
-
-    */
-
-    public void Button2Action (ActionEvent event)
+    // "Select Files" Button function
+    public void SelectFiles (ActionEvent event)
     {
         FileChooser fc = new FileChooser();
         fc.getExtensionFilters().addAll(
         new FileChooser.ExtensionFilter("MP3 files", "*.mp3"));
-        List<File> selectedFiles = fc.showOpenMultipleDialog(null);
+        selectedFiles = fc.showOpenMultipleDialog(null);
         pathes = selectedFiles.subList(0, selectedFiles.size());
 
         if (selectedFiles != null)
@@ -64,6 +60,7 @@ public class Controller
             {
                 listView.getItems().add(selectedFiles.get(i).getName());
             }
+            txtSelected.setText(pathes.size()+" files selected");
         }
 
         else
@@ -72,42 +69,57 @@ public class Controller
         }
     }
 
-    public void Button3Action (ActionEvent event)
+    // "Rename Selected" Button function
+    public void RenameSelected (ActionEvent event)
     {
-        for (int i = 0; i < pathes.size() ; i++)
+        if (!selectedFiles.isEmpty())
         {
-            try
+            for (int i = 0; i < pathes.size() ; i++)
             {
-                Mp3File mp3file = new Mp3File(pathes.get(i));
-                if (mp3file.hasId3v1Tag())
+                try
                 {
-                    ID3v1 id3v1Tag = mp3file.getId3v1Tag();
-                    String artist = id3v1Tag.getArtist();
-                    String title = id3v1Tag.getTitle();
+                    Mp3File mp3file = new Mp3File(pathes.get(i));
+                    filesProcessedCount++;
+                    if (mp3file.hasId3v1Tag())
+                    {
+                        // get data from mp3 tags
+                        ID3v1 id3v1Tag = mp3file.getId3v1Tag();
+                        String artist = id3v1Tag.getArtist();
+                        String title = id3v1Tag.getTitle();
 
-                    String replacedArtist = artist.replace(" ","_");
-                    String replacedTitle = title.replace(" ","_");
-                    String newName = replacedArtist+"-"+replacedTitle;
+                        // create new name
+                        String replacedArtist = artist.replace(" ", "_");
+                        String replacedTitle = title.replace(" ", "_");
+                        String newName = replacedArtist + "-" + replacedTitle;
 
-                   //System.out.println(newName);
-                   // System.out.println( pathes.get(i).getAbsolutePath());
-                   // System.out.println( pathes.get(i).getPath());
-                   // System.out.println( pathes.get(i).getParent()+"\\"+newName+".mp3");
+                        // rename
+                        File oldFile = new File(pathes.get(i).getAbsolutePath());
+                        File newFile = new File(pathes.get(i).getParent() + "\\" + newName + ".mp3");
+                        boolean success = oldFile.renameTo(newFile);
 
-                    File oldFile = new File(pathes.get(i).getAbsolutePath());
-                    File newFile = new File(pathes.get(i).getParent()+"\\"+newName+".mp3");
-                    boolean success = oldFile.renameTo(newFile);
-                    System.out.println(success);
-                    System.out.println(newName);
+                        if (success)
+                        {
+                            filesSuccessCount++;
+                        }
+
+                        else
+                        {
+                            filesUnsuccessCount++;
+                        }
+                    }
                 }
-            }
-            catch (Exception e)
-            {
-                e.printStackTrace();
+                catch (Exception e)
+                {
+                    e.printStackTrace();
+                }
+                txtProcessInfo.setText("Process Info:");
+                txtProcessed.setText(filesProcessedCount+" Files Processed");
+                txtSuccessfull.setText(filesSuccessCount+" Files Renamed");
+                txtCantRename.setText(filesProcessedCount-filesSuccessCount+" Files Not Renamed");
+                txtErrors.setText(filesUnsuccessCount+" Errors");
             }
         }
-
-        pathes.clear();
-
     }
 }
+
+

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Renamer:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Renamer_jar2</output-path>
+    <root id="archive" name="Renamer.jar">
+      <element id="module-output" name="Renamer" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/mpatric/mp3agic/0.8.3/mp3agic-0.8.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
 
 <GridPane alignment="center" hgap="10" prefHeight="375.0" prefWidth="324.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
@@ -17,9 +18,15 @@
    <children>
       <AnchorPane prefHeight="375.0" prefWidth="389.0">
          <children>
-            <Button fx:id="btn2" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#Button2Action" prefHeight="47.0" prefWidth="114.0" text="Select Files" />
-            <ListView fx:id="listView" layoutX="146.0" layoutY="17.0" prefHeight="340.0" prefWidth="158.0" />
-            <Button fx:id="btn3" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" onAction="#Button3Action" prefHeight="25.0" prefWidth="114.0" text="Rename Selected" />
+            <Button fx:id="btnSelectFiles" layoutX="15.0" layoutY="17.0" mnemonicParsing="false" onAction="#SelectFiles" prefHeight="47.0" prefWidth="114.0" text="Select Files" />
+            <ListView fx:id="listView" layoutX="146.0" layoutY="17.0" prefHeight="339.0" prefWidth="158.0" />
+            <Button fx:id="btnRenameSelected" layoutX="15.0" layoutY="77.0" mnemonicParsing="false" onAction="#RenameSelected" prefHeight="25.0" prefWidth="114.0" text="Rename Selected" />
+            <Text fx:id="txtSelected" layoutX="32.0" layoutY="127.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="0 Files Selected" />
+            <Text fx:id="txtProcessed" layoutX="14.0" layoutY="280.0" opacity="0.25" strokeType="OUTSIDE" strokeWidth="0.0" visible="true" />
+            <Text fx:id="txtProcessInfo" layoutX="14.0" layoutY="260.0" opacity="0.25" strokeType="OUTSIDE" strokeWidth="0.0" visible="true" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="243.4140625" AnchorPane.topAnchor="247.0" />
+            <Text fx:id="txtSuccessfull" layoutX="14.0" layoutY="298.0" opacity="0.25" strokeType="OUTSIDE" strokeWidth="0.0" visible="true" />
+            <Text fx:id="txtErrors" layoutX="14.0" layoutY="341.0" opacity="0.25" strokeType="OUTSIDE" strokeWidth="0.0" visible="true" />
+            <Text fx:id="txtCantRename" layoutX="14.0" layoutY="317.0" opacity="0.25" strokeType="OUTSIDE" strokeWidth="0.0" visible="true" />
          </children>
       </AnchorPane>
    </children>
