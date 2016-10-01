@@ -3,20 +3,22 @@ import javafx.fxml.FXML;
 import com.mpatric.mp3agic.ID3v1;
 import com.mpatric.mp3agic.Mp3File;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.ListView;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import java.io.File;
 import java.util.List;
 
-/*
-Program is not working with cyrillic  files --> FIX THIS BUG
-If (oldFileName = newFileName) - don't increment filesRenamed --> FIX THIS BUG
+/*  Created by Danylo Stasenko:
+*   https://github.com/DanyloStasenko
+*
+*   Program is not working with cyrillic  files --> FIX THIS BUG
+*
 */
 
 public class Controller
 {
-
     @FXML
     private ListView listView;
 
@@ -38,6 +40,8 @@ public class Controller
     @FXML
     private Text txtErrors; // current process
 
+    @FXML
+    private Hyperlink hyperlink;
 
     private List<File> pathes;
     private List<File> selectedFiles;
@@ -45,7 +49,8 @@ public class Controller
     private int filesSuccessCount = 0;
     private int filesUnsuccessCount = 0;
 
-    // "Select Files" Button function
+
+    // Button function for "Select Files"
     public void SelectFiles (ActionEvent event)
     {
         FileChooser fc = new FileChooser();
@@ -69,7 +74,7 @@ public class Controller
         }
     }
 
-    // "Rename Selected" Button function
+    // Button function for "Rename Selected"
     public void RenameSelected (ActionEvent event)
     {
         if (!selectedFiles.isEmpty())
@@ -92,26 +97,27 @@ public class Controller
                         String replacedTitle = title.replace(" ", "_");
                         String newName = replacedArtist + "-" + replacedTitle;
 
-                        // rename
+                        // rename file and increment success/unsuccess count
                         File oldFile = new File(pathes.get(i).getAbsolutePath());
                         File newFile = new File(pathes.get(i).getParent() + "\\" + newName + ".mp3");
                         boolean success = oldFile.renameTo(newFile);
-
-                        if (success)
-                        {
-                            filesSuccessCount++;
-                        }
-
-                        else
-                        {
-                            filesUnsuccessCount++;
-                        }
+                        if (success) filesSuccessCount++;
+                        else filesUnsuccessCount++;
                     }
                 }
                 catch (Exception e)
                 {
                     e.printStackTrace();
                 }
+
+                // default: text blocks are not visible
+                txtProcessInfo.setVisible(true);
+                txtProcessed.setVisible(true);
+                txtSuccessfull.setVisible(true);
+                txtCantRename.setVisible(true);
+                txtErrors.setVisible(true);
+
+                // show log
                 txtProcessInfo.setText("Process Info:");
                 txtProcessed.setText(filesProcessedCount+" Files Processed");
                 txtSuccessfull.setText(filesSuccessCount+" Files Renamed");
@@ -119,7 +125,14 @@ public class Controller
                 txtErrors.setText(filesUnsuccessCount+" Errors");
             }
         }
+        System.out.println("lol");
+    }
+
+    // Action -> HyperlinkClicked
+    public void hyperlinkClicked(ActionEvent event)
+    {
+       hyperlink.setText("Loading... Please, wait a minute...");
+       Main m = new Main();
+       m.openBrowser();
     }
 }
-
-

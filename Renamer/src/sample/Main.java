@@ -6,14 +6,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Main extends Application {
-
+public class Main extends Application
+{
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("mp3 Renamer");
         primaryStage.setScene(new Scene(root, 320, 375));
         primaryStage.show();
+
+    }
+
+    public void openBrowser()
+    {
+        getHostServices().showDocument("https://github.com/DanyloStasenko");
     }
 
 
