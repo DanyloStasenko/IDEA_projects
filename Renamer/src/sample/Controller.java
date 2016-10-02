@@ -23,7 +23,7 @@ public class Controller
     private ListView listView;
 
     @FXML
-    private Text txtSelected; // selected OK
+    private Text txtSelected; // selected
 
     @FXML
     private Text txtProcessInfo; // process info
@@ -43,12 +43,17 @@ public class Controller
     @FXML
     private Hyperlink hyperlink;
 
+    @FXML
+    private Text txtloading; // loading
+
+    @FXML
+    private Text txtwarning; // loading
+
     private List<File> pathes;
     private List<File> selectedFiles;
     private int filesProcessedCount = 0;
     private int filesSuccessCount = 0;
     private int filesUnsuccessCount = 0;
-
 
     // Button function for "Select Files"
     public void SelectFiles (ActionEvent event)
@@ -131,7 +136,8 @@ public class Controller
     // Action -> HyperlinkClicked
     public void hyperlinkClicked(ActionEvent event)
     {
-       hyperlink.setText("Loading... Please, wait a minute...");
+       txtloading.setVisible(true);
+       txtloading.setText("Loading... Please, Wait...");
        Main m = new Main();
        m.openBrowser();
     }

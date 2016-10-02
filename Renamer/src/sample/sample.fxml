@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <GridPane alignment="center" hgap="10" prefHeight="398.0" prefWidth="324.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
@@ -18,18 +18,24 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="380.0" prefWidth="324.0">
+      <AnchorPane prefHeight="398.0" prefWidth="324.0">
          <children>
-            <Button fx:id="btnSelectFiles" layoutX="15.0" layoutY="17.0" mnemonicParsing="false" onAction="#SelectFiles" prefHeight="47.0" prefWidth="114.0" text="Select Files" />
-            <ListView fx:id="listView" layoutX="146.0" layoutY="17.0" prefHeight="338.0" prefWidth="158.0" />
-            <Button fx:id="btnRenameSelected" layoutX="15.0" layoutY="77.0" mnemonicParsing="false" onAction="#RenameSelected" prefHeight="25.0" prefWidth="114.0" text="Rename Selected" />
-            <Text fx:id="txtSelected" layoutX="32.0" layoutY="127.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="0 Files Selected" />
+            <Button fx:id="btnSelectFiles" layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#SelectFiles" prefHeight="47.0" prefWidth="114.0" text="Select Files" />
+            <ListView fx:id="listView" layoutX="146.0" layoutY="18.0" prefHeight="337.0" prefWidth="158.0" />
+            <Button fx:id="btnRenameSelected" layoutX="16.0" layoutY="79.0" mnemonicParsing="false" onAction="#RenameSelected" prefHeight="25.0" prefWidth="114.0" text="Rename Selected" />
+            <Text fx:id="txtSelected" layoutX="37.0" layoutY="129.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="0 Files Selected" />
             <Text fx:id="txtProcessed" layoutX="14.0" layoutY="280.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Processed" visible="false" />
             <Text fx:id="txtProcessInfo" layoutX="14.0" layoutY="260.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Process Info" visible="false" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="243.4140625" AnchorPane.topAnchor="247.0" />
             <Text fx:id="txtSuccessfull" layoutX="14.0" layoutY="298.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Sucessfull" visible="false" />
             <Text fx:id="txtErrors" layoutX="14.0" layoutY="341.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Errors" visible="false" />
             <Text fx:id="txtCantRename" layoutX="14.0" layoutY="317.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Cant rename" visible="false" />
-            <Hyperlink fx:id="hyperlink" layoutX="27.0" layoutY="355.0" onAction="#hyperlinkClicked" opacity="0.5" text="Author: Danylo Stasenko (click to visit my GitHub)" />
+            <Hyperlink fx:id="hyperlink" layoutX="27.0" layoutY="355.0" onAction="#hyperlinkClicked" opacity="0.3" prefHeight="23.0" prefWidth="277.0" text="Author: Danylo Stasenko (click to visit my GitHub)" />
+            <Text fx:id="txtloading" layoutX="87.0" layoutY="383.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Loading... Please, Wait" visible="false" />
+            <Text fx:id="txtwarning" layoutX="17.0" layoutY="14.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: Don't use with cyrillic names! - will be fixed soon" wrappingWidth="286.845703125">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
    </children>
