@@ -18,22 +18,31 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="398.0" prefWidth="324.0">
+      <AnchorPane prefHeight="314.0" prefWidth="337.0">
          <children>
-            <Button fx:id="btnSelectFiles" layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#SelectFiles" prefHeight="47.0" prefWidth="114.0" text="Select Files" />
-            <ListView fx:id="listView" layoutX="146.0" layoutY="18.0" prefHeight="337.0" prefWidth="158.0" />
+            <Button fx:id="btnSelectFiles" layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#SelectFiles" prefHeight="47.0" prefWidth="114.0" text="Select Files" textOverrun="CLIP" />
+            <ListView fx:id="listView" layoutX="146.0" layoutY="18.0" prefHeight="337.0" prefWidth="171.0" />
             <Button fx:id="btnRenameSelected" layoutX="16.0" layoutY="79.0" mnemonicParsing="false" onAction="#RenameSelected" prefHeight="25.0" prefWidth="114.0" text="Rename Selected" />
-            <Text fx:id="txtSelected" layoutX="37.0" layoutY="129.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="0 Files Selected" />
-            <Text fx:id="txtProcessed" layoutX="14.0" layoutY="280.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Processed" visible="false" />
-            <Text fx:id="txtProcessInfo" layoutX="14.0" layoutY="260.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Process Info" visible="false" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="243.4140625" AnchorPane.topAnchor="247.0" />
-            <Text fx:id="txtSuccessfull" layoutX="14.0" layoutY="298.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Sucessfull" visible="false" />
-            <Text fx:id="txtErrors" layoutX="14.0" layoutY="341.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Errors" visible="false" />
-            <Text fx:id="txtCantRename" layoutX="14.0" layoutY="317.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Cant rename" visible="false" />
-            <Hyperlink fx:id="hyperlink" layoutX="27.0" layoutY="355.0" onAction="#hyperlinkClicked" opacity="0.3" prefHeight="23.0" prefWidth="277.0" text="Author: Danylo Stasenko (click to visit my GitHub)" />
-            <Text fx:id="txtloading" layoutX="87.0" layoutY="383.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Loading... Please, Wait" visible="false" />
-            <Text fx:id="txtwarning" layoutX="17.0" layoutY="14.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: Don't use with cyrillic names! - will be fixed soon" wrappingWidth="286.845703125">
+            <Text fx:id="txtSelected" layoutX="36.0" layoutY="130.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="0 Files Selected">
                <font>
                   <Font size="11.0" />
+               </font></Text>
+            <Text fx:id="txtProcessed" layoutX="16.0" layoutY="290.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Processed" visible="false" />
+            <Text fx:id="txtProcessInfo" layoutX="16.0" layoutY="270.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Process Info" visible="false" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="257.015625" AnchorPane.topAnchor="257.0" />
+            <Text fx:id="txtSuccessfull" layoutX="16.0" layoutY="308.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Sucessfull" visible="false" />
+            <Text fx:id="txtErrors" layoutX="16.0" layoutY="351.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Errors" visible="false" />
+            <Text fx:id="txtCantRename" layoutX="16.0" layoutY="327.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Cant rename" visible="false" />
+            <Hyperlink fx:id="hyperlink" layoutX="221.0" layoutY="364.0" onAction="#hyperlinkClicked" opacity="0.3" prefHeight="23.0" prefWidth="95.0" text="by Danylo Stasenko">
+               <font>
+                  <Font size="10.0" />
+               </font></Hyperlink>
+            <Text fx:id="txtloading" layoutX="181.0" layoutY="379.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="loading..." visible="false">
+               <font>
+                  <Font size="10.0" />
+               </font></Text>
+            <Text fx:id="txtwarning" layoutX="146.0" layoutY="366.0" opacity="0.3" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: Don't use with cyrillic names!" wrappingWidth="190.845703125">
+               <font>
+                  <Font size="10.0" />
                </font>
             </Text>
          </children>

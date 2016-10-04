@@ -9,6 +9,8 @@ import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import java.io.File;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /*  Created by Danylo Stasenko:
 *   https://github.com/DanyloStasenko
@@ -105,6 +107,7 @@ public class Controller
                         // rename file and increment success/unsuccess count
                         File oldFile = new File(pathes.get(i).getAbsolutePath());
                         File newFile = new File(pathes.get(i).getParent() + "\\" + newName + ".mp3");
+
                         boolean success = oldFile.renameTo(newFile);
                         if (success) filesSuccessCount++;
                         else filesUnsuccessCount++;
@@ -130,14 +133,13 @@ public class Controller
                 txtErrors.setText(filesUnsuccessCount+" Errors");
             }
         }
-        System.out.println("lol");
     }
 
     // Action -> HyperlinkClicked
     public void hyperlinkClicked(ActionEvent event)
     {
        txtloading.setVisible(true);
-       txtloading.setText("Loading... Please, Wait...");
+       txtloading.setText("loading...");
        Main m = new Main();
        m.openBrowser();
     }
