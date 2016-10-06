@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Hibernate_1.iml" filepath="$PROJECT_DIR$/Hibernate_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MavenDependencies/MavenDependencies.iml" filepath="$PROJECT_DIR$/MavenDependencies/MavenDependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/h_1.iml" filepath="$PROJECT_DIR$/h_1.iml" />
     </modules>
   </component>
 </project>
