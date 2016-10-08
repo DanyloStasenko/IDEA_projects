@@ -3,14 +3,11 @@ import javafx.fxml.FXML;
 import com.mpatric.mp3agic.ID3v1;
 import com.mpatric.mp3agic.Mp3File;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import java.io.File;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /*  Created by Danylo Stasenko:
 *   https://github.com/DanyloStasenko
@@ -25,31 +22,41 @@ public class Controller
     private ListView listView;
 
     @FXML
-    private Text txtSelected; // selected
+    private Text txtSelected;
 
     @FXML
-    private Text txtProcessInfo; // process info
+    private Text txtProcessInfo;
 
     @FXML
-    private Text txtProcessed; // processed
+    private Text txtProcessed;
 
     @FXML
-    private Text txtSuccessfull; // success
+    private Text txtSuccessfull;
 
     @FXML
-    private Text txtCantRename; // unsuccess
+    private Text txtCantRename;
 
     @FXML
-    private Text txtErrors; // current process
+    private Text txtErrors;
 
     @FXML
-    private Hyperlink hyperlink;
+    private Text txtLoading;
 
     @FXML
-    private Text txtloading; // loading
+    private Text txtWarning;
 
     @FXML
-    private Text txtwarning; // loading
+    private Text txtAdvanced;
+
+    @FXML
+    private Hyperlink hyperLink;
+
+    @FXML
+    private CheckBox cbSpecificArtist;
+
+    @FXML
+    private TextField tfSpecificArtist;
+
 
     private List<File> pathes;
     private List<File> selectedFiles;
@@ -57,7 +64,7 @@ public class Controller
     private int filesSuccessCount = 0;
     private int filesUnsuccessCount = 0;
 
-    // Button function for "Select Files"
+    // Function for button: "Select Files"
     public void SelectFiles (ActionEvent event)
     {
         FileChooser fc = new FileChooser();
@@ -81,7 +88,7 @@ public class Controller
         }
     }
 
-    // Button function for "Rename Selected"
+    // Function for button: "Rename Selected"
     public void RenameSelected (ActionEvent event)
     {
         if (!selectedFiles.isEmpty())
@@ -104,13 +111,21 @@ public class Controller
                         String replacedTitle = title.replace(" ", "_");
                         String newName = replacedArtist + "-" + replacedTitle;
 
+                        if (cbSpecificArtist.isSelected() && tfSpecificArtist.getText().length() > 0)
+                        {
+                            String specificArtist = tfSpecificArtist.getText();
+                            newName = specificArtist+"-"+replacedTitle;
+                        }
+
                         // rename file and increment success/unsuccess count
                         File oldFile = new File(pathes.get(i).getAbsolutePath());
                         File newFile = new File(pathes.get(i).getParent() + "\\" + newName + ".mp3");
 
+                        // rename
                         boolean success = oldFile.renameTo(newFile);
                         if (success) filesSuccessCount++;
                         else filesUnsuccessCount++;
+
                     }
                 }
                 catch (Exception e)
@@ -135,12 +150,20 @@ public class Controller
         }
     }
 
-    // Action -> HyperlinkClicked
+    // Function for: HyperlinkClicked - open my Github profile using default browser
     public void hyperlinkClicked(ActionEvent event)
     {
-       txtloading.setVisible(true);
-       txtloading.setText("loading...");
+       txtLoading.setVisible(true);
+       txtLoading.setText("loading...");
        Main m = new Main();
        m.openBrowser();
+    }
+
+    public void cbSpecificArtistClicked(ActionEvent event)
+    {
+       if (cbSpecificArtist.isSelected())
+       {
+          tfSpecificArtist.setDisable(false);
+       }
     }
 }
