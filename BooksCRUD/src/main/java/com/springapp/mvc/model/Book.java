@@ -19,7 +19,6 @@ public class Book
     @Column(name = "book_price")
     private int bookPrice;
 
-
     public int getId()
     {
         return id;

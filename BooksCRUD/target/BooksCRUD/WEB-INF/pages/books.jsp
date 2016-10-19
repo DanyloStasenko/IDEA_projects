@@ -69,7 +69,7 @@
                 <td>${book.id}</td>
                 <td><a href="/bookdata/${book.id}" target="_blank">${book.bookTitle}</a></td>
                 <td>${book.bookAuthor}</td>
-                <td>${book.bookPrice/100}${book.bookPrice%100}</td>
+                <td>${book.price/100}${book.price%100}</td>
                 <td><a href="<c:url value='/edit/${book.id}'/>">Edit</a></td>
                 <td><a href="<c:url value='/remove/${book.id}'/>">Delete</a></td>
             </tr>
