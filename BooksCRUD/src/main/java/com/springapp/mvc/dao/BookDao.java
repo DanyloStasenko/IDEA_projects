@@ -11,7 +11,4 @@ public interface BookDao
     public void removeBook(int id);
     public Book getBookById(int id);
     public List<Book> listBooks();
-
-    // 9:18
-
 }

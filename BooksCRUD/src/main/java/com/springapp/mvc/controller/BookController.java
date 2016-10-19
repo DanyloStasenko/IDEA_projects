@@ -18,7 +18,7 @@ public class BookController
     private BookService bookService;
 
     @Autowired(required = true)
-    //@Qualifier(value = "bookService")
+    //@Qualifier(value = "bookService") <- ???
     public void setBookService(BookService bookService)
     {
         this.bookService = bookService;
@@ -72,6 +72,4 @@ public class BookController
 
         return "bookdata";
     }
-
-
 }

@@ -56,6 +56,7 @@ public class BookDaoImpl implements BookDao
         Session session = this.sessionFactory.getCurrentSession();
         Book book = (Book) session.load(Book.class, new Integer(id));
         logger.info("Book loaded" + book);
+
         return book;
     }
 
@@ -70,6 +71,7 @@ public class BookDaoImpl implements BookDao
         {
             logger.info("Book list: " + book);
         }
+
         return bookList;
     }
 }
