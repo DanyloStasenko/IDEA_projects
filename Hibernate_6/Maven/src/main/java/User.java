@@ -1,27 +1,27 @@
+import javax.persistence.*;
 import java.util.Set;
 
+@Entity
+@Table(name="user_table")
 public class User
 {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private long id;
+
+    @Column(name = "age")
     private int age;
+
+    @Column(name = "first_name")
     private String firstname;
+
+    @Column(name = "last_name")
     private String lastname;
-    private Set<Role> roles;
 
     public User() {}
     public User(long id) {
         this.id = id;
-    }
-
-    public Set<Role> getRoles()
-    {
-        return roles;
-    }
-
-    public void setRoles(Set<Role> roles)
-    {
-        this.roles = roles;
     }
 
 

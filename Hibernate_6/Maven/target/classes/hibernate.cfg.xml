@@ -13,8 +13,8 @@
         <property name="format_sql">true</property>
         <property name="use_sql_comments">true</property>
 
-        <mapping resource="user.cfg.xml"/>
-        <mapping resource="role.cfg.xml"/>
+        <mapping class="Role"/>
+        <mapping class="User"/>
 
 
 
