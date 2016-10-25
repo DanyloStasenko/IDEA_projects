@@ -1,5 +1,4 @@
 import javax.persistence.*;
-import java.util.Set;
 
 @Entity
 @Table(name="user_table")
@@ -10,6 +9,10 @@ public class User
     @Column(name = "id")
     private long id;
 
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private Role role;
+
     @Column(name = "age")
     private int age;
 
@@ -19,21 +22,9 @@ public class User
     @Column(name = "last_name")
     private String lastname;
 
-    @ManyToOne
-    @JoinColumn(name = "role_id")
-    private Role role;
-
-    public Role getRole()
-    {
-        return role;
-    }
-
-    public void setRole(Role role)
-    {
-        this.role = role;
-    }
 
     public User() {}
+
     public User(long id) {
         this.id = id;
     }
@@ -47,6 +38,7 @@ public class User
         this.id = id;
     }
 
+
     public int getAge() {
         return age;
     }
@@ -54,6 +46,7 @@ public class User
     public void setAge(int age) {
         this.age = age;
     }
+
 
     public String getFirstname() {
         return firstname;
@@ -63,6 +56,7 @@ public class User
         this.firstname = firstname;
     }
 
+
     public String getLastname() {
         return lastname;
     }
@@ -71,4 +65,14 @@ public class User
         this.lastname = lastname;
     }
 
+
+    public Role getRole()
+    {
+        return role;
+    }
+
+    public void setRole(Role role)
+    {
+        this.role = role;
+    }
 }

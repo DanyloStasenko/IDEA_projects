@@ -17,7 +17,9 @@ public class Role {
     @OneToMany(mappedBy = "role")
     private Set<User> users = new HashSet<User>();
 
+
     public Role() {}
+
 
     public Long getId() {
         return id;
@@ -26,6 +28,7 @@ public class Role {
     public void setId(Long id) {
         this.id = id;
     }
+
 
     public String getTitle() {
         return title;
