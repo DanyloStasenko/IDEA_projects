@@ -1,0 +1,21 @@
+o01:01:41,095 {DEBUG} StandardServletEnvironment.<init>:112 - Initializing new StandardServletEnvironment
+o01:01:41,100 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+o01:01:41,100 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+o01:01:41,110 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+o01:01:41,111 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [systemProperties] PropertySource with lowest search precedence
+o01:01:41,112 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+o01:01:41,115 {DEBUG} StandardServletEnvironment.<init>:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+o01:06:33,342 {DEBUG} StandardServletEnvironment.<init>:112 - Initializing new StandardServletEnvironment
+o01:06:33,346 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+o01:06:33,346 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+o01:06:33,355 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+o01:06:33,356 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [systemProperties] PropertySource with lowest search precedence
+o01:06:33,356 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+o01:06:33,359 {DEBUG} StandardServletEnvironment.<init>:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+o01:28:40,398 {DEBUG} StandardServletEnvironment.<init>:112 - Initializing new StandardServletEnvironment
+o01:28:40,509 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+o01:28:40,510 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+o01:28:40,716 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+o01:28:40,717 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [systemProperties] PropertySource with lowest search precedence
+o01:28:40,718 {DEBUG} StandardServletEnvironment.addLast:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+o01:28:40,720 {DEBUG} StandardServletEnvironment.<init>:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
