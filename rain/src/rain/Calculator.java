@@ -2,7 +2,7 @@ package rain;
 
 public class Calculator {
 
-	// get max value
+	// get max value (height)
 	public static int getMaxValue(int[] array) {
 		int maxValue = 0;
 		for (int i = 0; i < array.length; i++) {
@@ -14,32 +14,35 @@ public class Calculator {
 	}
 
 	// calculate result
-	public static int calculateResult(int[] array) {
-		boolean countStarted = false;
-		int maxValue = getMaxValue(array);
-		int tempCount = 0;
+	public static int calculateResult(int[] levels) {
+		boolean isFilling = false;
+		int maxValue = getMaxValue(levels);
+		int fillingCount = 0;
 		int result = 0;
 
-		// loop for "height"
+		// Checking 'rows' from the highest to the lowest / loop for "height" / Y axis
 		for (int i = maxValue; i > 0; i--) {
-			countStarted = false;
-			tempCount = 0;
+			isFilling = false;
+			fillingCount = 0;
 
-			// loop for "width"
-			for (int j = 0; j < array.length; j++) {
-
-				if (array[j] >= i && countStarted) {
-					result += tempCount;
-					tempCount = 0;
+			// Checking 'columns' from beginning to the end / loop for "width" / X axis
+			for (int j = 0; j < levels.length; j++) {
+				
+				// water between two 'blocks' must be stored
+				if ((levels[j] >= i) && isFilling) {
+					result += fillingCount;
+					fillingCount = 0;
 					continue;
 				}
 
-				else if (countStarted) {
-					tempCount++;
+				// if filling is started - increment count
+				else if (isFilling) {
+					fillingCount++;
 				}
 
-				else if (array[j] >= i) {
-					countStarted = true;
+				// we will start filling, only if we can see 'block' in current row
+				else if (levels[j] >= i) {
+					isFilling = true;
 				}
 			}
 		}
