@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" prefHeight="408.0" prefWidth="324.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="408.0" prefWidth="324.0">
+            <children>
+                <Text layoutX="89.0" layoutY="21.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Data:" />
+                <ListView id="array" fx:id="dataList" layoutX="42.0" layoutY="25.0" prefHeight="350.0" prefWidth="125.0" />
+                <ListView id="numbers" fx:id="idList" layoutX="10.0" layoutY="25.0" opacity="0.2" prefHeight="350.0" prefWidth="32.0" />
+
+                <Button fx:id="btnAdd" layoutX="180.0" layoutY="25.0" mnemonicParsing="false" onAction="#addValue" prefHeight="25.0" prefWidth="60.0" text="Add" textOverrun="CLIP" />
+                <Button fx:id="btnDelete" layoutX="180.0" layoutY="60.0" mnemonicParsing="false" onAction="#Delete" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+
+                <TextField fx:id="textFieldAdd" layoutX="250.0" layoutY="25.0" opacity="0.7" prefHeight="25.0" prefWidth="60.0" promptText="value" />
+
+                <Hyperlink fx:id="hyperLink" layoutX="210.0" layoutY="376.0" onAction="#hyperlinkClicked" opacity="0.3" prefHeight="23.0" prefWidth="95.0" text="by Danylo Stasenko">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Hyperlink>
+
+            <TextField fx:id="textFieldDeleteById" layoutX="250.0" layoutY="60.0" opacity="0.7" prefHeight="25.0" prefWidth="60.0" promptText="id" />
+            <Text layoutX="13.0" layoutY="23.0" opacity="0.2" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+            <Text fx:id="textWarning" fill="#f50b0b" layoutX="181.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No element with such id!" visible="false" wrappingWidth="128.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="textTotal" layoutX="64.0" layoutY="389.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Total: 0 Elements">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
