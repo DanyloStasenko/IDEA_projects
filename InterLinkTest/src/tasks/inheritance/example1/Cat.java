@@ -16,4 +16,5 @@ public class Cat implements IPet{
 	public void walk() {
 		System.out.println("Cat walking");
 	}
+	
 }

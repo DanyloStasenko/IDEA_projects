@@ -1,7 +1,7 @@
 /*	Encapsulation: 
  * 	Example 1:
- * 	When user attempts to change the weight using this setWeight method 
- * - program will check whether the following value is valid (positive).
+ * 	When user attempts to change the weight using 'setWeight' method 
+ *  - program will check whether the following value is valid (positive).
  */
 package tasks.encapsulation.example1;
 

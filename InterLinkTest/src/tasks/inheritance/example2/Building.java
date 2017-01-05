@@ -12,13 +12,13 @@ public abstract class Building {
 	public void setFloors(int floors) {
 		this.floors = floors;
 	}
-	
-	public Building() {
-		
+
+	public String getName() {
+		return name;
 	}
-	
-	void breakDown(){
-		name = null;
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override

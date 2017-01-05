@@ -30,7 +30,7 @@ public abstract class ChessFigure {
 		this.currentYPosition = currentYPosition;
 	}
 
-	void changePosition(int xAxis, int yAxis){
-		System.out.println(" changing position to: " + xAxis + yAxis);
+	public void changePosition(int xAxis, int yAxis){
+		System.out.println("Changing position to: " + xAxis + yAxis);
 	}
 }

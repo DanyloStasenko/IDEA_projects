@@ -2,9 +2,9 @@ package tasks.inheritance.example2;
 
 public class Professor {
 	
+	private int age;
 	private String name;
 	private String degree;
-	private int age;
 	
 	public Professor() {
 		
@@ -33,4 +33,10 @@ public class Professor {
 	public void setAge(int age) {
 		this.age = age;
 	}
+
+	@Override
+	public String toString() {
+		return "Professor [age=" + age + ", name=" + name + ", degree=" + degree + "]";
+	}
+	
 }

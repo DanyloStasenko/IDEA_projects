@@ -7,7 +7,7 @@ public class University extends Building{
 	private ArrayList<Department> universityDepartments;
 	
 	public University() {
-		
+		this.universityDepartments = new ArrayList<>();
 	}
 
 	public String getName() {
@@ -23,6 +23,13 @@ public class University extends Building{
 	}
 
 	public void addDepartment(Department universityDepartment) {
-		universityDepartments.add(universityDepartment);
+		Department department = new Department(universityDepartment);
+		universityDepartments.add(department);
 	}
+
+	@Override
+	public String toString() {
+		return super.toString()+"University [universityDepartments=" + universityDepartments + "]";
+	}
+	
 }

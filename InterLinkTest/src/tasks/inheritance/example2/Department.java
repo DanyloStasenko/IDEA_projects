@@ -8,9 +8,14 @@ public class Department {
 	ArrayList<Professor> professors = new ArrayList<>();
 	
 	public Department() {
-		
-	}
 
+	}
+	
+	public Department(Department department) {
+		this.name = department.getName();
+		this.professors = department.getProfessors();
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -30,4 +35,10 @@ public class Department {
 	public ArrayList<Professor> getProfessors(){
 		return professors;
 	}
+
+	@Override
+	public String toString() {
+		return "Department [name=" + name + ", professors=" + professors + "]";
+	}
+	
 }

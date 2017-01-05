@@ -35,15 +35,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		/* Encapsulation: */	
+		// Encapsulation:	
+		System.out.println("\tEncapsulation:");
 		Person person = new Person();
 		person.setFirstName("Danylo");
 		person.setMiddleName("Wolodymyrowych");
 		person.setLastName("Stasenko");
-		
-		System.out.println("    Encapsulation:");
 		System.out.println("Example 1: My initials: " + person.getInitials());
-		
 		
 		Barbell barbell = new Barbell();
 		barbell.setWeight(14);
@@ -51,8 +49,9 @@ public class Main {
 		System.out.println("Example 2: Current weight: " + barbell.getWeight());
 		System.out.println();
 			
-		/* Inheritance: */
-		System.out.println("    Inheritance:");
+		
+		// Inheritance:
+		System.out.println("\tInheritance:");
 		Pegasus pegasus = new Pegasus();
 		pegasus.feed();
 		pegasus.sleep();
@@ -63,25 +62,11 @@ public class Main {
 		cat.feed();
 		cat.sleep();
 		cat.walk();
-		
 		System.out.println();
 		
-		King king = new King();
-		king.changePosition(1,1);
-		Queen queen = new Queen();
-		queen.changePosition(3, 2);
-		Rook rook = new Rook();
-		rook.changePosition(8, 8);
-		Pawn pawn = new Pawn();
-		pawn.changePosition(6, 2);
-		
-		System.out.println();
-		
-		/* University IS Building (inheritance)
-		 * University HAS Departments (composition, cannot exist separately from university)
-		 * Department HAS Professors (aggregation, may exist separately from departments)
-		*/
-		
+		// University IS Building (inheritance)
+		// University HAS Departments (composition, because Departments cannot exist separately from University)
+		// Department HAS Professors (aggregation, because Professors may exist separately from Departments)
 		Professor professor = new Professor();
 		professor.setName("Roman Ivanowych");
 		professor.setAge(55);
@@ -94,10 +79,23 @@ public class Main {
 		University university = new University();
 		university.setName("Lviv Polytechnics");
 		university.setFloors(4);
-	
+		university.addDepartment(department);
+		System.out.println(university);
+		System.out.println();
 		
-		/* Polymorphism: */	
-		System.out.println("    Polymorphism:");
+		King king = new King();
+		king.changePosition(1,1);
+		Queen queen = new Queen();
+		queen.changePosition(3, 2);
+		Rook rook = new Rook();
+		rook.changePosition(8, 8);
+		Pawn pawn = new Pawn();
+		pawn.changePosition(6, 2);
+		System.out.println();
+		
+		
+		// Polymorphism:
+		System.out.println("\tPolymorphism:");
 		Soldier soldier = new Soldier();
 		soldier.setAttack(35);
 		Soldier soldier2 = new Soldier();

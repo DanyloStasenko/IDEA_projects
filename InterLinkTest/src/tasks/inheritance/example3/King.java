@@ -6,9 +6,4 @@ public class King extends ChessFigure {
 		this.value = 10;
 	}
 	
-	@Override
-	public void changePosition(int xAxis, int yAxis) {
-		System.out.print("King");
-		super.changePosition(xAxis, yAxis);
-	}
 }
