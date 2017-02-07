@@ -23,168 +23,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProgramCreator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/structural/bridge/ProgramCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/structural.bridge" pinned="false" current="false" current-in-tab="false">
-        <entry file="uml://JAVA/structural.bridge">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>structural.bridge</OriginalElement>
-              <nodes>
-                <node x="92.125" y="248.0">structural.bridge.StockExchange</node>
-                <node x="0.0" y="124.0">structural.bridge.CppDeveloper</node>
-                <node x="243.875" y="0.0">structural.bridge.Developer</node>
-                <node x="237.875" y="372.0">structural.bridge.ProgramCreator</node>
-                <node x="328.125" y="248.0">structural.bridge.BankSystem</node>
-                <node x="213.875" y="101.0">structural.bridge.Program</node>
-                <node x="484.0" y="124.0">structural.bridge.JavaDeveloper</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="structural.bridge.CppDeveloper" target="structural.bridge.Developer">
-                  <point x="0.0" y="-25.5" />
-                  <point x="70.5" y="76.0" />
-                  <point x="267.375" y="76.0" />
-                  <point x="-47.0" y="25.5" />
-                </edge>
-                <edge source="structural.bridge.StockExchange" target="structural.bridge.Program">
-                  <point x="0.0" y="-37.0" />
-                  <point x="200.125" y="223.0" />
-                  <point x="264.125" y="223.0" />
-                  <point x="-50.25" y="48.5" />
-                </edge>
-                <edge source="structural.bridge.JavaDeveloper" target="structural.bridge.Developer">
-                  <point x="0.0" y="-25.5" />
-                  <point x="554.5" y="76.0" />
-                  <point x="361.375" y="76.0" />
-                  <point x="47.0" y="25.5" />
-                </edge>
-                <edge source="structural.bridge.BankSystem" target="structural.bridge.Program">
-                  <point x="0.0" y="-37.0" />
-                  <point x="428.625" y="223.0" />
-                  <point x="364.625" y="223.0" />
-                  <point x="50.25" y="48.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="313.0" y="212.0" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Constructors</Category>
-                <Category>Fields</Category>
-                <Category>Methods</Category>
-                <Category>Inner Classes</Category>
-                <Category>Properties</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Project.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/structural/composite/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+            <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="391">
               <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Team.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Team.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/structural/composite/Team.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4797546" vertical-offset="0" max-vertical-offset="815">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#157#168#0" expanded="true" />
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
                 <element signature="method#createProject#0;class#Team#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/structural.composite" pinned="false" current="false" current-in-tab="false">
-        <entry file="uml://JAVA/structural.composite">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>structural.composite</OriginalElement>
-              <nodes>
-                <node x="0.0" y="134.5">structural.composite.JavaDeveloper</node>
-                <node x="231.275" y="0.0">structural.composite.Developer</node>
-                <node x="161.0" y="134.5">structural.composite.CppDeveloper</node>
-                <node x="156.575" y="269.0">structural.composite.Project</node>
-                <node x="322.0" y="101.0">structural.composite.Team</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="structural.composite.JavaDeveloper" target="structural.composite.Developer">
-                  <point x="0.0" y="-25.5" />
-                  <point x="70.5" y="71.0" />
-                  <point x="248.9" y="71.0" />
-                  <point x="-52.875" y="25.5" />
-                </edge>
-                <edge source="structural.composite.Project" target="structural.composite.Team">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="structural.composite.Project" target="structural.composite.CppDeveloper">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="structural.composite.CppDeveloper" target="structural.composite.Developer">
-                  <point x="0.0" y="-25.5" />
-                  <point x="231.5" y="81.0" />
-                  <point x="284.15000000000003" y="81.0" />
-                  <point x="-17.625" y="25.5" />
-                </edge>
-                <edge source="structural.composite.Project" target="structural.composite.JavaDeveloper">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="structural.composite.Team" target="structural.composite.Developer">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="133.5" y="-75.5" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="Developer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/structural/decorator/Developer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CppDeveloper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/structural/composite/CppDeveloper.java">
+      <file leaf-file-name="JavaDeveloper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/structural/decorator/JavaDeveloper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#122#123#0" expanded="true" />
-                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#164#165#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/structural/decorator/Task.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18773006" vertical-offset="0" max-vertical-offset="815">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="method#main#0;class#Task#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaTeamLead.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/structural/decorator/JavaTeamLead.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#162#163#0" expanded="true" />
+                <element signature="e#199#200#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeveloperDecorator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/structural/decorator/DeveloperDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#162#163#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeniorJavaDeveloper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/structural/decorator/SeniorJavaDeveloper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#145#146#0" expanded="true" />
+                <element signature="e#177#178#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#257#258#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,12 +134,9 @@
       <file leaf-file-name="JavaDeveloper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/structural/composite/JavaDeveloper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="238">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#122#123#0" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -206,28 +144,8 @@
       <file leaf-file-name="Developer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/structural/composite/Developer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
               <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankSystem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/structural/bridge/BankSystem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="340">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StockExchange.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/structural/bridge/StockExchange.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -243,11 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/factory/PhpDeveloper.java" />
-        <option value="$PROJECT_DIR$/src/abstractFactory/ManualTester.java" />
-        <option value="$PROJECT_DIR$/src/abstractFactory/WebsiteProject.java" />
-        <option value="$PROJECT_DIR$/src/abstractFactory/PhpDeveloper.java" />
-        <option value="$PROJECT_DIR$/src/abstractFactory/Developer.java" />
         <option value="$PROJECT_DIR$/src/abstractFactory/Tester.java" />
         <option value="$PROJECT_DIR$/src/abstractFactory/ProjectManager.java" />
         <option value="$PROJECT_DIR$/src/abstractFactory/ProjectTeamFactory.java" />
@@ -292,6 +205,13 @@
         <option value="$PROJECT_DIR$/src/structural/composite/JavaDeveloper.java" />
         <option value="$PROJECT_DIR$/src/structural/composite/CppDeveloper.java" />
         <option value="$PROJECT_DIR$/src/structural/composite/Team.java" />
+        <option value="$PROJECT_DIR$/src/structural/decorator.java" />
+        <option value="$PROJECT_DIR$/src/structural/decorator/Developer.java" />
+        <option value="$PROJECT_DIR$/src/structural/decorator/JavaDeveloper.java" />
+        <option value="$PROJECT_DIR$/src/structural/decorator/DeveloperDecorator.java" />
+        <option value="$PROJECT_DIR$/src/structural/decorator/SeniorJavaDeveloper.java" />
+        <option value="$PROJECT_DIR$/src/structural/decorator/JavaTeamLead.java" />
+        <option value="$PROJECT_DIR$/src/structural/decorator/Task.java" />
       </list>
     </option>
   </component>
@@ -328,8 +248,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -366,7 +284,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="composite" />
+              <option name="myItemId" value="decorator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,6 +326,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -665,7 +585,7 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="structural.composite.Project" />
+      <option name="MAIN_CLASS_NAME" value="structural.decorator.Task" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -708,11 +628,13 @@
       <workItem from="1486242511591" duration="649000" />
       <workItem from="1486320357887" duration="867000" />
       <workItem from="1486379614901" duration="3819000" />
+      <workItem from="1486487729904" duration="11000" />
+      <workItem from="1486487769658" duration="865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10730000" />
+    <option name="totallyTimeSpent" value="11606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="847" y="0" width="1073" height="1160" extended-state="0" />
@@ -772,70 +694,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/creational/abstractFactory/Developer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="187">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/creational/factory/PhpDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/creational/factory/PhpDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/creational/abstractFactory/website/PhpDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/creational/abstractFactory/website/ManualTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">abstractFactory</node>
-            <node x="" y="">com</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">java</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">factory</node>
-            <node x="" y="">org</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">sun</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="170.0" y="186.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/creational/abstractFactory/website/WebsitePM.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
@@ -1086,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1094,7 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,7 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1110,7 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +1048,9 @@
             </edge>
           </edges>
           <settings layout="Hierarchic Group" zoom="1.0" x="313.0" y="212.0" />
-          <SelectedNodes />
+          <SelectedNodes>
+            <node>structural.bridge.Program</node>
+          </SelectedNodes>
           <Categories>
             <Category>Constructors</Category>
             <Category>Fields</Category>
@@ -1229,37 +1083,23 @@
               <point x="248.9" y="71.0" />
               <point x="-52.875" y="25.5" />
             </edge>
-            <edge source="structural.composite.Project" target="structural.composite.Team">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="structural.composite.Project" target="structural.composite.CppDeveloper">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="structural.composite.CppDeveloper" target="structural.composite.Developer">
               <point x="0.0" y="-25.5" />
               <point x="231.5" y="81.0" />
               <point x="284.15000000000003" y="81.0" />
               <point x="-17.625" y="25.5" />
             </edge>
-            <edge source="structural.composite.Project" target="structural.composite.JavaDeveloper">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="structural.composite.Team" target="structural.composite.Developer">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="133.5" y="-75.5" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="1.0" x="134.0" y="-75.0" />
+          <SelectedNodes>
+            <node>structural.composite.Developer</node>
+          </SelectedNodes>
           <Categories>
-            <Category>Fields</Category>
             <Category>Constructors</Category>
+            <Category>Fields</Category>
             <Category>Methods</Category>
-            <Category>Properties</Category>
             <Category>Inner Classes</Category>
+            <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1270,10 +1110,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,10 +1126,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1306,16 +1140,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/structural/composite/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4797546" vertical-offset="0" max-vertical-offset="815">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#157#168#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
             <element signature="method#createProject#0;class#Team#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structural/decorator/Developer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structural/decorator/JavaDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#122#123#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structural/decorator/DeveloperDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structural/decorator/SeniorJavaDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structural/decorator/JavaTeamLead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structural/decorator/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18773006" vertical-offset="0" max-vertical-offset="815">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="method#main#0;class#Task#0" expanded="true" />
           </folding>
         </state>
       </provider>
