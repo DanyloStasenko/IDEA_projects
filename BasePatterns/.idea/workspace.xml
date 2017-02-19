@@ -23,122 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JAVA/behavioral.command" pinned="false" current="false" current-in-tab="false">
-        <entry file="uml://JAVA/behavioral.command">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>behavioral.command</OriginalElement>
-              <nodes>
-                <node x="653.3499999999999" y="496.0">behavioral.command.DatabaseRunner</node>
-                <node x="0.0" y="207.0">behavioral.command.Developer</node>
-                <node x="744.0" y="273.0">behavioral.command.DeleteCommand</node>
-                <node x="533.0" y="273.0">behavioral.command.InsertCommand</node>
-                <node x="322.0" y="273.0">behavioral.command.SelectCommand</node>
-                <node x="517.25" y="33.0">behavioral.command.Command</node>
-                <node x="799.25" y="0.0">behavioral.command.Database</node>
-                <node x="955.0" y="273.0">behavioral.command.UpdateCommand</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="behavioral.command.UpdateCommand" target="behavioral.command.Command">
-                  <point x="-47.75" y="-48.5" />
-                  <point x="1002.75" y="157.0" />
-                  <point x="631.55" y="157.0" />
-                  <point x="50.799999999999955" y="25.5" />
-                </edge>
-                <edge source="behavioral.command.SelectCommand" target="behavioral.command.Command">
-                  <point x="-47.75" y="-48.5" />
-                  <point x="369.75" y="167.0" />
-                  <point x="555.35" y="167.0" />
-                  <point x="-25.399999999999977" y="25.5" />
-                </edge>
-                <edge source="behavioral.command.InsertCommand" target="behavioral.command.Command">
-                  <point x="-47.75" y="-48.5" />
-                  <point x="0.0" y="25.5" />
-                </edge>
-                <edge source="behavioral.command.DeleteCommand" target="behavioral.command.Command">
-                  <point x="-47.75" y="-48.5" />
-                  <point x="791.75" y="167.0" />
-                  <point x="606.15" y="167.0" />
-                  <point x="25.399999999999977" y="25.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.8589634664401019" x="888.0" y="535.0" />
-              <SelectedNodes>
-                <node>behavioral.command.DatabaseRunner</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Constructors</Category>
-                <Category>Fields</Category>
-                <Category>Methods</Category>
-                <Category>Inner Classes</Category>
-                <Category>Properties</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Expression.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/behavioral/interpreter/Expression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndExpression.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/behavioral/interpreter/AndExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrExpression.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/behavioral/interpreter/OrExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TerminalExpression.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/behavioral/interpreter/TerminalExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InterpreterRunner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/behavioral/interpreter/InterpreterRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding>
-                <element signature="method#main#0;class#InterpreterRunner#0" expanded="true" />
-                <element signature="method#getJavaExpression#0;class#InterpreterRunner#0" expanded="true" />
-                <element signature="method#getJavaEEExpression#0;class#InterpreterRunner#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Iterator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/behavioral/iterator/Iterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
@@ -148,7 +36,7 @@
       <file leaf-file-name="Collection.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/behavioral/iterator/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="187">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
@@ -158,35 +46,84 @@
       <file leaf-file-name="JavaDeveloper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/behavioral/iterator/JavaDeveloper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+            <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="935">
               <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeveloperRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/behavioral/iterator/DeveloperRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="391">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chat.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/Chat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.06137184" vertical-offset="0" max-vertical-offset="554">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/Admin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleUser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/SimpleUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleTextChat.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/SimpleTextChat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="method#JavaDeveloper#0;class#JavaDeveloper#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="method#hasNext#0;class#SkillIterator#0;class#JavaDeveloper#0" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#180#186#0" expanded="true" />
+                <element signature="method#sendMessage#0;class#SimpleTextChat#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeveloperRunner.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/behavioral/iterator/DeveloperRunner.java">
+      <file leaf-file-name="SimpleChatRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/SimpleChatRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4714038" vertical-offset="0" max-vertical-offset="577">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
-                <element signature="method#main#0;class#DeveloperRunner#0" expanded="true" />
+                <element signature="method#main#0;class#SimpleChatRunner#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,13 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/structural/bridge/ProgramCreator.java" />
-        <option value="$PROJECT_DIR$/src/structural/composite/Project.java" />
-        <option value="$PROJECT_DIR$/src/structural/composite/Developer.java" />
-        <option value="$PROJECT_DIR$/src/structural/composite/JavaDeveloper.java" />
-        <option value="$PROJECT_DIR$/src/structural/composite/CppDeveloper.java" />
-        <option value="$PROJECT_DIR$/src/structural/composite/Team.java" />
-        <option value="$PROJECT_DIR$/src/structural/decorator.java" />
         <option value="$PROJECT_DIR$/src/structural/decorator/Developer.java" />
         <option value="$PROJECT_DIR$/src/structural/decorator/JavaDeveloper.java" />
         <option value="$PROJECT_DIR$/src/structural/decorator/DeveloperDecorator.java" />
@@ -253,6 +183,13 @@
         <option value="$PROJECT_DIR$/src/behavioral/iterator/Collection.java" />
         <option value="$PROJECT_DIR$/src/behavioral/iterator/JavaDeveloper.java" />
         <option value="$PROJECT_DIR$/src/behavioral/iterator/DeveloperRunner.java" />
+        <option value="$PROJECT_DIR$/src/behavioral/mediator/Chat.java" />
+        <option value="$PROJECT_DIR$/src/behavioral/mediator/User.java" />
+        <option value="$PROJECT_DIR$/src/behavioral/mediator/Admin.java" />
+        <option value="$PROJECT_DIR$/src/behavioral/mediator/SimpleUser.java" />
+        <option value="$PROJECT_DIR$/src/behavioral/mediator/SipmleTextChat.java" />
+        <option value="$PROJECT_DIR$/src/behavioral/mediator/SimpleTextChat.java" />
+        <option value="$PROJECT_DIR$/src/behavioral/mediator/SimpleChatRunner.java" />
       </list>
     </option>
   </component>
@@ -346,7 +283,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="iterator" />
+              <option name="myItemId" value="mediator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -628,7 +565,7 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="behavioral.iterator.DeveloperRunner" />
+      <option name="MAIN_CLASS_NAME" value="behavioral.mediator.SimpleChatRunner" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -684,16 +621,18 @@
       <workItem from="1487262785095" duration="840000" />
       <workItem from="1487341700498" duration="855000" />
       <workItem from="1487344868357" duration="697000" />
-      <workItem from="1487450651682" duration="577000" />
+      <workItem from="1487450651682" duration="1176000" />
+      <workItem from="1487522924182" duration="992000" />
+      <workItem from="1487536990968" duration="427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21053000" />
+    <option name="totallyTimeSpent" value="23071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="832" y="11" width="1051" height="1145" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -716,7 +655,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19677094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32795155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3806706" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -749,134 +688,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/structural.bridge">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>structural.bridge</OriginalElement>
-          <nodes>
-            <node x="92.125" y="248.0">structural.bridge.StockExchange</node>
-            <node x="0.0" y="124.0">structural.bridge.CppDeveloper</node>
-            <node x="243.875" y="0.0">structural.bridge.Developer</node>
-            <node x="237.875" y="372.0">structural.bridge.ProgramCreator</node>
-            <node x="328.125" y="248.0">structural.bridge.BankSystem</node>
-            <node x="213.875" y="101.0">structural.bridge.Program</node>
-            <node x="484.0" y="124.0">structural.bridge.JavaDeveloper</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="structural.bridge.CppDeveloper" target="structural.bridge.Developer">
-              <point x="0.0" y="-25.5" />
-              <point x="70.5" y="76.0" />
-              <point x="267.375" y="76.0" />
-              <point x="-47.0" y="25.5" />
-            </edge>
-            <edge source="structural.bridge.StockExchange" target="structural.bridge.Program">
-              <point x="0.0" y="-37.0" />
-              <point x="200.125" y="223.0" />
-              <point x="264.125" y="223.0" />
-              <point x="-50.25" y="48.5" />
-            </edge>
-            <edge source="structural.bridge.JavaDeveloper" target="structural.bridge.Developer">
-              <point x="0.0" y="-25.5" />
-              <point x="554.5" y="76.0" />
-              <point x="361.375" y="76.0" />
-              <point x="47.0" y="25.5" />
-            </edge>
-            <edge source="structural.bridge.BankSystem" target="structural.bridge.Program">
-              <point x="0.0" y="-37.0" />
-              <point x="428.625" y="223.0" />
-              <point x="364.625" y="223.0" />
-              <point x="50.25" y="48.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="313.0" y="212.0" />
-          <SelectedNodes>
-            <node>structural.bridge.Program</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Inner Classes</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/structural.composite">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>structural.composite</OriginalElement>
-          <nodes>
-            <node x="0.0" y="134.5">structural.composite.JavaDeveloper</node>
-            <node x="231.275" y="0.0">structural.composite.Developer</node>
-            <node x="161.0" y="134.5">structural.composite.CppDeveloper</node>
-            <node x="156.575" y="269.0">structural.composite.Project</node>
-            <node x="322.0" y="101.0">structural.composite.Team</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="structural.composite.JavaDeveloper" target="structural.composite.Developer">
-              <point x="0.0" y="-25.5" />
-              <point x="70.5" y="71.0" />
-              <point x="248.9" y="71.0" />
-              <point x="-52.875" y="25.5" />
-            </edge>
-            <edge source="structural.composite.CppDeveloper" target="structural.composite.Developer">
-              <point x="0.0" y="-25.5" />
-              <point x="231.5" y="81.0" />
-              <point x="284.15000000000003" y="81.0" />
-              <point x="-17.625" y="25.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="134.0" y="-75.0" />
-          <SelectedNodes>
-            <node>structural.composite.Developer</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Inner Classes</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/structural/composite/CppDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/structural/composite/Developer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/structural/composite/JavaDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/structural/composite/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/structural/composite/Team.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
@@ -1098,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,8 +939,8 @@
           <ID>JAVA</ID>
           <OriginalElement>behavioral.command</OriginalElement>
           <nodes>
-            <node x="653.3499999999999" y="496.0">behavioral.command.DatabaseRunner</node>
             <node x="0.0" y="207.0">behavioral.command.Developer</node>
+            <node x="653.3499999999999" y="496.0">behavioral.command.DatabaseRunner</node>
             <node x="744.0" y="273.0">behavioral.command.DeleteCommand</node>
             <node x="533.0" y="273.0">behavioral.command.InsertCommand</node>
             <node x="322.0" y="273.0">behavioral.command.SelectCommand</node>
@@ -1166,7 +973,7 @@
               <point x="25.399999999999977" y="25.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.8589634664401019" x="888.0" y="535.0" />
+          <settings layout="Hierarchic Group" zoom="0.411663807890223" x="573.0" y="274.0" />
           <SelectedNodes>
             <node>behavioral.command.DatabaseRunner</node>
           </SelectedNodes>
@@ -1186,7 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,7 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,11 +1021,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="method#main#0;class#InterpreterRunner#0" expanded="true" />
-            <element signature="method#getJavaExpression#0;class#InterpreterRunner#0" expanded="true" />
-            <element signature="method#getJavaEEExpression#0;class#InterpreterRunner#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,32 +1045,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
           <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="method#JavaDeveloper#0;class#JavaDeveloper#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="method#hasNext#0;class#SkillIterator#0;class#JavaDeveloper#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/behavioral/iterator/DeveloperRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4714038" vertical-offset="0" max-vertical-offset="577">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/SimpleChatRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="method#main#0;class#DeveloperRunner#0" expanded="true" />
+            <element signature="method#main#0;class#SimpleChatRunner#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/SimpleTextChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#180#186#0" expanded="true" />
+            <element signature="method#sendMessage#0;class#SimpleTextChat#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/SimpleUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/behavioral/mediator/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06137184" vertical-offset="0" max-vertical-offset="554">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
