@@ -3,6 +3,10 @@
 <head>
     <title>Welcome Page</title>
     <style type="text/css">
+        .center {
+            margin: 0 auto;
+            width: 70%;
+        }
         .tg {
             border-collapse: collapse;
             border-spacing: 0;
@@ -37,80 +41,77 @@
 </head>
 
 <body>
+<div class="center">
 	<h1>${message}</h1>
     <table class="tg">
         <tr>
             <th width="50">Task</th>
             <th width="150">Description</th>
-            <th width="50">Open Page</th>
             <th width="200">SQL</th>
         </tr>
-
         <tr>
             <td>Task 0</td>
             <td>Return all users</td>
-            <td> <a href="/task0users">Open page</a></td>
-            <td>SELECT * FROM user;</td>
+            <td> <a href="/task0users" target="_blank">SELECT * FROM user;</a></td>
         </tr>
-
         <tr>
             <td>Task 0</td>
             <td>Return all movies</td>
-            <td> <a href="/task0movies">Open page</a></td>
-            <td>SELECT * FROM movie;</td>
+            <td> <a href="/task0movies" target="_blank">SELECT * FROM movie;</a></td>
         </tr>
-
         <tr>
             <td>Task 0</td>
             <td>Return all ratings</td>
-            <td> <a href="/task0ratings">Open page</a></td>
-            <td>SELECT * FROM rating;</td>
+            <td> <a href="/task0ratings" target="_blank">SELECT * FROM rating;</a></td>
         </tr>
-
+        <tr>
+            <th width="50"></th>
+            <th width="150"></th>
+            <th width="200"></th>
+        </tr>
         <tr>
             <td>Task 1</td>
             <td>Get users with NULL date rating value</td>
-            <td> <a href="/task1">Open page</a></td>
-            <td>UPDATE rating SET rating_date = now() WHERE rating_date IS NULL;</td>
+            <td> <a href="/task1" target="_blank">UPDATE rating SET rating_date = now() WHERE rating_date IS NULL;</a></td>
         </tr>
-
         <tr>
             <td>Task 2</td>
             <td>Insert movies</td>
-            <td> <a href="/task2">Open page</a></td>
-            <td>INSERT INTO movie (movie_id,movie_title,movie_director) VALUES (9, 'Deadpool', 'Tim Miller'),(10, 'The 300 spartans', 'Zack Snyder');</td>
+            <td> <a href="/task2" target="_blank">INSERT INTO movie (movie_id,movie_title,movie_director) VALUES (9, 'Deadpool', 'Tim Miller'),(10, 'The 300 spartans', 'Zack Snyder');</a></td>
         </tr>
-
         <tr>
             <td>Task 3</td>
             <td>Return movies with 4 or 5 rating</td>
-            <td> <a href="/task3">Open page</a></td>
-            <td>SELECT movie_id, rating_date FROM rating WHERE rating IN (4,5) GROUP BY rating_date DESC;</td>
+            <td> <a href="/task3" target="_blank">SELECT movie_id, rating_date FROM rating WHERE rating IN (4,5) GROUP BY rating_date DESC;</a></td>
         </tr>
-
         <tr>
             <td>Task 4</td>
             <td>Return movies that have no ratings</td>
-            <td> <a href="/task4">Open page</a></td>
-            <td>SELECT movie_title FROM movie WHERE movie_title NOT IN
+            <td> <a href="/task4" target="_blank">SELECT movie_title FROM movie WHERE movie_title NOT IN
                 (SELECT movie.movie_title FROM movie INNER JOIN rating
-                ON movie.movie_id=rating.movie_id WHERE rating.rating IS NOT NULL)</td>
+                ON movie.movie_id=rating.movie_id WHERE rating.rating IS NOT NULL)</a></td>
         </tr>
-
         <tr>
             <td>Task 5</td>
             <td>Delete movies added in task 2</td>
-            <td> <a href="/task5">Open page</a></td>
-            <td>DELETE FROM movie WHERE movie_id IN (9,10);</td>
+            <td> <a href="/task5" target="_blank">DELETE FROM movie WHERE movie_id IN (9,10);</a></td>
         </tr>
-
         <tr>
             <td>Task 6</td>
             <td>Return the movie_title, user_name and rating for every rating</td>
-            <td> <a href="/task6">Open page</a></td>
-            <td>SELECT movie.movie_title, user.user_title, rating FROM movie NATURAL JOIN rating NATURAL JOIN user;</td>
+            <td> <a href="/task6" target="_blank">SELECT movie.movie_title, user.user_title, rating FROM movie NATURAL JOIN rating NATURAL JOIN user;</a></td>
         </tr>
-
+        <tr>
+            <th width="50"></th>
+            <th width="150"></th>
+            <th width="200"></th>
+        </tr>
+        <tr>
+            <td>Bonus</td>
+            <td>Use it to create NULL ratings date</td>
+            <td> <a href="/clear" target="_blank">Create ratings with NULL date values (use before task 1)</a></td>
+        </tr>
     </table>
+</div>
 </body>
 </html>
