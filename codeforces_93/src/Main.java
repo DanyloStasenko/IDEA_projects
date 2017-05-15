@@ -1,3 +1,42 @@
+/*
+    Task from:
+    http://codeforces.com/problemset/problem/330/A?locale=en
+
+    "Cakeminator"
+
+    You are given a rectangular cake, represented as an r × c grid.
+    Each cell either has an evil strawberry, or is empty. For example, a 3 × 4 cake may look as follows:
+            0 0 0 0
+            0 0 0 0
+            0 0 0 0
+    The cakeminator is going to eat the cake! Each time he eats, he chooses a row or a column that does not contain
+    any evil strawberries and contains at least one cake cell that has not been eaten before, and eats all the cake
+    cells there. He may decide to eat any number of times.
+    Please output the maximum number of cake cells that the cakeminator can eat.
+
+    Input
+    The first line contains two integers r and c (2 ≤ r, c ≤ 10), denoting the number of rows and the number of columns
+    of the cake. The next r lines each contains c characters — the j-th character of the i-th line denotes the
+    content of the cell at row i and column j, and is either one of these:
+    '.' character denotes a cake cell with no evil strawberry;
+    'S' character denotes a cake cell with an evil strawberry.
+
+    Output
+    Output the maximum number of cake cells that the cakeminator can eat.
+
+    Examples
+        input
+                3 4
+                S...
+                ....
+                ..S.
+        output
+                8
+
+    Note
+    For the first example, one possible way to eat the maximum number of cake cells is as follows (perform 3 eats).
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,74 +51,40 @@ public class Main {
         int rows = scanner.nextInt();
         int columns = scanner.nextInt();
 
-        int[][] matrix = new int[rows][columns];
-        int pieces = 0;
-
-        rows--;
-        columns--;
+        char[][] cells = new char[rows][columns];
+        int result = 0;
 
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
-                if (!rowContainsStrawberry(matrix, i, columns) || !columnContainsStrawberry(matrix, j, rows)){
-                    if (matrix[i][j] != 9){
-                        matrix[i][j] = 9; // label
-                        pieces++;
-                    }
-                }
-            }
-
-        }
-
-        /*for (int i = 0; i < rows; i++) {
             String input = reader.readLine();
             for (int j = 0; j < columns; j++) {
-                if (input.charAt(j) == 'S'){
-                    matrix[i][j] = 0;
-                }
-                if (input.charAt(j) == '.'){
-                    matrix[i][j] = 1;
-                }
+                cells[i][j] = input.charAt(j);
             }
         }
 
-        for (int i = 0; i < columns; i++) {
-            for (int j = 0; j < rows; j++) {
-                if (!rowContainsStrawberry(matrix, i, columns)){
-                    if (matrix[i][j] != 9){
-                        matrix[i][j] = 9; // label
-                        pieces++;
-                    }
-                }
-            }
-        }*/
-
-
+        // if  (currentRow doesn't contain strawberry OR currentColumn doesn't contain strawberry){result++;}
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                if (!columnContainsStrawberry(matrix, i, columns)){
-                    if (matrix[i][j] != 9){
-                        matrix[i][j] = 9; // label
-                        pieces++;
-                    }
+                if (!rowContainsStrawberry(cells, i, columns) || !columnContainsStrawberry(cells, j, rows)){
+                    result++;
                 }
             }
         }
 
-        System.out.println(pieces);
+        System.out.println(result);
     }
 
-    static boolean rowContainsStrawberry(int[][] array, int rowNumber, int columnCount){
+    static boolean rowContainsStrawberry(char[][] array, int rowNumber, int columnCount){
         for (int i = 0; i < columnCount; i++) {
-            if (array[rowNumber][i] == 0){
+            if (array[rowNumber][i] == 'S'){
                 return true;
             }
         }
         return false;
     }
 
-    static boolean columnContainsStrawberry(int[][] array, int columnNumber, int rowCount){
+    static boolean columnContainsStrawberry(char[][] array, int columnNumber, int rowCount){
         for (int i = 0; i < rowCount; i++) {
-            if (array[columnNumber][i] == 0){
+            if (array[i][columnNumber] == 'S'){
                 return true;
             }
         }
