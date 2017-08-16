@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Shop List</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/controller.js"></script>
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Arsenal|Merriweather+Sans">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "/greeting"
+    }).then(function(data) {
+       $('.greeting-id').append(data.id);
+       $('.greeting-content').append(data.content);
+    });
+});
+</script>
+
+<div class = "container">
+    <div class = "row">
+
+        <div>
+            <p class="greeting-id">The ID is </p>
+            <p class="greeting-content">The content is </p>
+        </div>
+
+        <div class = "col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-md-offset-3 shopList">
+            <div ng-app = "myShoppingList" ng-controller = "myCtrl">
+                <ol>
+                    <li ng-repeat = "x in products">{{ x }}
+                        <span ng-click = "removeItem($index)"> × </span>
+                    </li>
+                </ol>
+                <div class = "row">
+                    <div class = "col-md-10 col-sm-10 col-xs-10 col-lg-10">
+                        <input ng-model = "addMe" type = "text" class = "form-control" placeholder = "Add shopping items">
+                    </div>
+                    <div class = "col-md-2 col-sm-2 col-xs-2 col-lg-2">
+                        <button ng-click = "addItem()" type = "button" class = "btn btn-default glyphicon glyphicon-plus changeColor"></button>
+                    </div>
+                </div>
+                <p>{{ errortext }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-route.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+
+</head>
+<body>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        Name: <input ng-model="name">
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope, $http) {
+            $scope.name = "John Doe";
+
+            function(){
+                $http.get("/value").success(function(data){
+                    $scope.name = data;
+                }).error(function(){
+                    scope.name = "error";
+                });
+            };
+        });
+    </script>
+
+    &lt;!&ndash;<script>
+        var app = angular.module('myApp', []);
+                app.controller('myCtrl', function($scope, $http) {
+                            $scope.name = function(){
+                                $http.get("/value").success(function(data){
+                                    $scope.name = data;
+                                }).error(function(){
+                            alert("error");
+                            });
+                        }
+                });
+    </script>&ndash;&gt;
+
+    &lt;!&ndash;<p>Get your greeting <a href="/greeting">here</a></p>
+
+
+
+    <a href="#/nextfile">Click</a>
+
+    <div ng-view></div>
+&ndash;&gt;
+    </body>
+</html>
+
+</body>
+</html>
+-->
