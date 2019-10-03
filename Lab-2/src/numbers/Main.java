@@ -1,3 +1,5 @@
+package numbers;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -7,11 +9,10 @@ public class Main {
     private static final int N = 15;
 
     public static void main(String[] args) {
-
         /*
         Варіант 1
         використовуючи статичні методи класу Collections, і здійснюючи контрольний висновок по кожному пункту.
-        1. Створіть масив з N чисел (згенеруйте за допомогою PGenerator).
+        1. Створіть масив з N чисел (згенеруйте за допомогою numbers.PGenerator).
         2. На основі масиву створіть список List.
         3. Відсортуйте список в натуральному порядку (за зростанням)
         4. Перемішайте список.
