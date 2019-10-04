@@ -22,7 +22,7 @@ public class ComparatorTest {
         HumanComparatorByLName testComarator = new HumanComparatorByLName();
         System.out.println("2: Comparator: " +testComarator.compare(a, b)); // 2: Comparator: -1
 
-        // 3: HashSet
+        // 3: HashSet. When iterating through a HashSet the order is unpredictable.
         Set<Human> set = new HashSet<Human>();
         set.add (new Human ( "Andriy", "Wolf", 25));
         set.add (new Human ( "Rita", "Kitter", 24));
@@ -31,12 +31,12 @@ public class ComparatorTest {
         set.add (new Human ( "Roman", "Romanenko", 55));
         System.out.println("3: Hash-set: " + set);  // 3: Hash-set: [Ivan Ivanenko 15, Rita Kitter 24, Roman Romanenko 55, Andriy Wolf 25, Peter Petrenko 31]
 
-        // 4: Linked hash-set:
+        // 4: Linked hash-set: While a LinkedHashSet lets us iterate through the elements in the order in which they were inserted
         LinkedHashSet<Human> linkedHashSet = new LinkedHashSet<>();
         linkedHashSet.addAll(set);
         System.out.println("4: Linked hash-set: " + linkedHashSet); // 4: Linked hash-set: [Ivan Ivanenko 15, Rita Kitter 24, Roman Romanenko 55, Andriy Wolf 25, Peter Petrenko 31]
 
-        // 5: Tree-set:
+        // 5: Tree-set: is typically implemented as a red-black tree. A HashSet is typically a lot faster than a TreeSet
         TreeSet<Human> treeSet = new TreeSet<Human>();
         treeSet.addAll(set);
         System.out.println("5: Tree-set: " + treeSet);  // 5: Tree-set: [Andriy Wolf 25, Ivan Ivanenko 15, Peter Petrenko 31, Rita Kitter 24, Roman Romanenko 55]
